@@ -1,50 +1,63 @@
-# React + TypeScript + Vite
+# React + Tailwind css + Vite + shadcn + tip tap
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Rich Text Editor with Shadcn UI and Tiptap
 
-Currently, two official plugins are available:
+A feature-rich text editor built with React, Tiptap, Shadcn UI components, and Tailwind CSS. This editor includes task list functionality and a customizable toolbar.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- Rich text editing powered by Tiptap
+- Task list and task item support
+- Customizable toolbar using Shadcn UI components
+- Responsive design with Tailwind CSS
+- Dropdown menu for additional formatting options
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Technologies
 
-- Configure the top-level `parserOptions` property like this:
+- React
+- TypeScript
+- Tiptap
+- Shadcn UI
+- Tailwind CSS
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Getting Started
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+1. Clone the repository:
+git clone https://github.com/Fenan-mht/RichText-with-shadcn-tailwind-css-and-tip-tap
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+2. Install dependencies:
+yarn add
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+4. Start the development server:
+yarn dev
+
+## Usage
+
+Import and use the RichTextEditor component in your React application:
+
+```jsx
+import RichTextEditor from './components/RichTextEditor';
+
+function App() {
+return (
+ <div className="container mx-auto p-4">
+   <h1 className="text-2xl font-bold mb-4">Rich Text Editor</h1>
+   <RichTextEditor />
+ </div>
+);
+}
+
+export default App;
+Customization
+Modify the Toolbar component to customize the editor toolbar.
+Adjust Tailwind CSS classes for styling changes.
+Contributing
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+License
+This project is licensed under the MIT License.
+
+Acknowledgements
+Tiptap
+Shadcn UI
+Tailwind CSS
